@@ -89,13 +89,14 @@ const getStatus = async (req, res) => {
 const getImage = (req, res) => {
   try {
     const imagePath = path.resolve(__dirname, '../cache/summary.png');
-    console.log('🖼️ Looking for image at:', imagePath);
+    console.log('Looking for image at:', imagePath);
     if (!fs.existsSync(imagePath)) {
       return res.status(404).json({ error: 'Summary image not found' });
     }
+
     res.sendFile(imagePath);
   } catch (error) {
-    console.error('Error fetching image:', error);
+    console.error(' Error fetching image:', error);
     res.status(500).json({ error: 'Failed to fetch image' });
   }
 };
