@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": "oyewole1001$",
+    "database": "country_api",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "DNtsyeqtWwgWUJoFvJpjYqVMkxhBpLFq",
+    "database": "railway",
+    "host": "yamabiko.proxy.rlwy.net",
+    "port": 3306,
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}

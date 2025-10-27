@@ -9,7 +9,7 @@ app.use(express.json());
 app.use('/', countryRoutes);
 
 const PORT = process.env.PORT || 8080;
-
+console.log(PORT);
 sequelize.authenticate() 
   .then(() => {
     console.log('Database connected successfully!');
